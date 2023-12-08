@@ -2,9 +2,9 @@ import streamlit as st
 import pickle as pkl
 import numpy as np
 
-class_list = {'1': 'Male', '0': 'Female'}
+class_list = {'1': 'Tich Cuc', '2': 'Tieu Cuc', '0': 'Trung Binh'}
 
-st.title('Name Prediction')
+st.title('Emotional Prediction')
 input = open('ec_vsfc.pkl', 'rb')
 encoder = pkl.load(input)
 
