@@ -2,7 +2,7 @@ import streamlit as st
 import pickle as pkl
 import numpy as np
 
-class_list = {'1': 'Tich Cuc', '2': 'Tieu Cuc', '0': 'Trung Binh'}
+class_list = {'1': 'Positive', '2': 'Negative', '0': 'Normal'}
 
 st.title('Emotional Prediction')
 input = open('ec_vsfc.pkl', 'rb')
@@ -11,7 +11,7 @@ encoder = pkl.load(input)
 input = open('lrc_vsfc_1.pkl', 'rb')
 model = pkl.load(input)
 
-st.header('Write Name')
+st.header('Write Vietnamese Sentence')
 txt = st.text_area("","")
                          
 if txt != '':
