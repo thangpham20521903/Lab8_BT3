@@ -2,7 +2,7 @@ import streamlit as st
 import pickle as pkl
 import numpy as np
 
-class_list = {'1': 'Positive', '2': 'Negative', '0': 'Normal'}
+class_list = {'2': 'Positive', '1': 'Negative', '0': 'Normal'}
 
 st.title('Emotional Prediction')
 input = open('ec_vsfc.pkl', 'rb')
